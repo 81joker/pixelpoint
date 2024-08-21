@@ -730,9 +730,10 @@ ol {
 
 .schedule-tab .st-content .sc-widget li i {
 	color: #f44949;
-	position: absolute;
+	font-size: 1.4rem;
+	/* position: absolute;
 	left: 0;
-	top: 7px;
+	top: 7px; */
 }
 
 /*---------------------

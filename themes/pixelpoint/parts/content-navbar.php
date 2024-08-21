@@ -9,7 +9,8 @@
             <div class="nav-menu">
                 <nav class="mainmenu mobile-menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li <?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'class="active"' : ''; ?>><a  href="<?php echo site_url('/') ?>">Home</a></li>
+                        <li <?php echo ($_SERVER['REQUEST_URI'] == '/events/') ? 'class="active"' : ''; ?> ><a  href="<?php echo site_url('/events') ?>"  >Events</a></li>
                         <li><a href="./about-us.html">About</a></li>
                         <li><a href="./speaker.html">Speakers</a>
                             <ul class="dropdown">
