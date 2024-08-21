@@ -23,7 +23,7 @@ Template Name: General Template
                                     <?php
                                     endwhile;
                                 else: ?>
-                                    <p><?php esc_html_e( 'Nothing yet to be displayed!', 'wp-devs' ) ?></p>
+                                    <p><?php esc_html_e( 'Nothing yet to be displayed!', 'pixelpoint' ) ?></p>
                             <?php endif; ?>                                
                         </div>
                     </div>
