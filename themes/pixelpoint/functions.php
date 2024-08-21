@@ -87,10 +87,10 @@ function display_api_data() {
 
     if (isset($data['@graph'])) {
         foreach ($data['@graph'] as $event) { 
-            // echo "<pre>";
-            // var_dump($event);
-            // echo "</pre>";
-            
+            echo "<pre>";
+            var_dump($event);
+            echo "</pre>";
+
             // Extract and format time
             $startDate = isset($event['startDate']) ? new DateTime($event['startDate']) : null;
             $endDate = isset($event['endDate']) ? new DateTime($event['endDate']) : null;
