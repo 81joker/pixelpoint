@@ -1,10 +1,8 @@
 /*  ---------------------------------------------------
-    Template Name: Manup
-    Description: Manup Event HTML Template
+    Template Name: Nehad
+    Description: Nehad Event 
     Author: Colorlib
-    Author URI: http://colorlib.com
     Version: 1.0
-    Created: Colorlib
 ---------------------------------------------------------  */
 
 'use strict';
@@ -119,4 +117,6 @@
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
     });
 
+
+    
 })(jQuery);

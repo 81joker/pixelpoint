@@ -1,12 +1,12 @@
 <?php
 
-function wpdevs_customizer( $wp_customize ){
+function pixelpoint_customizer( $wp_customize ){
     // 1 Copyright Section
     $wp_customize->add_section(
         'sec_copyright',
         array(
-            'title' => __( 'Copyright Settings', 'wp-devs' ),
-            'description' => __( 'Copyright Settings', 'wp-devs' )
+            'title' => __( 'Copyright Settings', 'pixelpoint' ),
+            'description' => __( 'Copyright Settings', 'pixelpoint' )
         )
     );
 
@@ -14,7 +14,7 @@ function wpdevs_customizer( $wp_customize ){
                 'set_copyright',
                 array(
                     'type' => 'theme_mod',
-                    'default' => __( 'Copyright X - All Rights Reserved', 'wp-devs' ),
+                    'default' => __( 'Copyright X - All Rights Reserved', 'pixelpoint' ),
                     'sanitize_callback' => 'sanitize_text_field'
                 )
             );
@@ -22,8 +22,8 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_copyright',
                 array(
-                    'label' => __( 'Copyright Information', 'wp-devs' ),
-                    'description' => __( 'Please, type your copyright here', 'wp-devs' ),
+                    'label' => __( 'Copyright Information', 'pixelpoint' ),
+                    'description' => __( 'Please, type your copyright here', 'pixelpoint' ),
                     'section' => 'sec_copyright',
                     'type' => 'text'
                 )
@@ -33,7 +33,7 @@ function wpdevs_customizer( $wp_customize ){
     $wp_customize->add_section(
         'sec_hero',
         array(
-            'title' => __( 'Hero Section', 'wp-devs' )
+            'title' => __( 'Hero Section', 'pixelpoint' )
         )
     );
 
@@ -42,7 +42,7 @@ function wpdevs_customizer( $wp_customize ){
                 'set_hero_title',
                 array(
                     'type' => 'theme_mod',
-                    'default' => __( 'Please, add some title', 'wp-devs' ),
+                    'default' => __( 'Please, add some title', 'pixelpoint' ),
                     'sanitize_callback' => 'sanitize_text_field'
                 )
             );
@@ -50,8 +50,8 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_title',
                 array(
-                    'label' => __( 'Hero Title', 'wp-devs' ),
-                    'description' => __( 'Please, type your here title here', 'wp-devs' ),
+                    'label' => __( 'Hero Title', 'pixelpoint' ),
+                    'description' => __( 'Please, type your here title here', 'pixelpoint' ),
                     'section' => 'sec_hero',
                     'type' => 'text'
                 )
@@ -62,7 +62,7 @@ function wpdevs_customizer( $wp_customize ){
                 'set_hero_subtitle',
                 array(
                     'type' => 'theme_mod',
-                    'default' => __( 'Please, add some subtitle', 'wp-devs' ),
+                    'default' => __( 'Please, add some subtitle', 'pixelpoint' ),
                     'sanitize_callback' => 'sanitize_textarea_field'
                 )
             );
@@ -70,8 +70,8 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_subtitle',
                 array(
-                    'label' => __( 'Hero Subtitle', 'wp-devs' ),
-                    'description' => __( 'Please, type your subtitle here', 'wp-devs' ),
+                    'label' => __( 'Hero Subtitle', 'pixelpoint' ),
+                    'description' => __( 'Please, type your subtitle here', 'pixelpoint' ),
                     'section' => 'sec_hero',
                     'type' => 'textarea'
                 )
@@ -82,7 +82,7 @@ function wpdevs_customizer( $wp_customize ){
                 'set_hero_button_text',
                 array(
                     'type' => 'theme_mod',
-                    'default' => __( 'Learn More', 'wp-devs' ),
+                    'default' => __( 'Learn More', 'pixelpoint' ),
                     'sanitize_callback' => 'sanitize_text_field'
                 )
             );
@@ -90,8 +90,8 @@ function wpdevs_customizer( $wp_customize ){
             $wp_customize->add_control(
                 'set_hero_button_text',
                 array(
-                    'label' => __( 'Hero button text', 'wp-devs' ),
-                    'description' => __( 'Please, type your hero button text here', 'wp-devs' ),
+                    'label' => __( 'Hero button text', 'pixelpoint' ),
+                    'description' => __( 'Please, type your hero button text here', 'pixelpoint' ),
                     'section' => 'sec_hero',
                     'type' => 'text'
                 )
@@ -110,8 +110,8 @@ function wpdevs_customizer( $wp_customize ){
           $wp_customize->add_control(
               'set_hero_button_link',
               array(
-                  'label' => __( 'Hero button link', 'wp-devs' ),
-                  'description' => __( 'Please, type your hero button link here', 'wp-devs' ),
+                  'label' => __( 'Hero button link', 'pixelpoint' ),
+                  'description' => __( 'Please, type your hero button link here', 'pixelpoint' ),
                   'section' => 'sec_hero',
                   'type' => 'url'
               )
@@ -130,8 +130,8 @@ function wpdevs_customizer( $wp_customize ){
           $wp_customize->add_control(
               'set_hero_height',
               array(
-                  'label' => __( 'Hero height', 'wp-devs' ),
-                  'description' => __( 'Please, type your hero height', 'wp-devs' ),
+                  'label' => __( 'Hero height', 'pixelpoint' ),
+                  'description' => __( 'Please, type your hero height', 'pixelpoint' ),
                   'section' => 'sec_hero',
                   'type' => 'number'
               )
@@ -149,7 +149,7 @@ function wpdevs_customizer( $wp_customize ){
         $wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize,
             'set_hero_background',
             array(
-                'label' => __( 'Hero Image', 'wp-devs' ),
+                'label' => __( 'Hero Image', 'pixelpoint' ),
                 'section'   => 'sec_hero',
                 'mime_type' => 'image'
             )));
@@ -158,7 +158,7 @@ function wpdevs_customizer( $wp_customize ){
 $wp_customize->add_section( 
     'sec_blog', 
     array(
-        'title' => __( 'Blog Section', 'wp-devs' )
+        'title' => __( 'Blog Section', 'pixelpoint' )
 ) );
 
         // Posts per page
@@ -172,8 +172,8 @@ $wp_customize->add_section(
         $wp_customize->add_control( 
             'set_per_page', 
             array(
-                'label' => __( 'Posts per page', 'wp-devs' ),
-                'description' => __( 'How many items to display in the post list?', 'wp-devs' ),			
+                'label' => __( 'Posts per page', 'pixelpoint' ),
+                'description' => __( 'How many items to display in the post list?', 'pixelpoint' ),			
                 'section' => 'sec_blog',
                 'type' => 'number'
         ) );
@@ -189,8 +189,8 @@ $wp_customize->add_section(
         $wp_customize->add_control( 
             'set_category_include', 
             array(
-                'label' => __( 'Post categories to include', 'wp-devs' ),
-                'description' => __( 'Comma separated values or single category ID', 'wp-devs' ),
+                'label' => __( 'Post categories to include', 'pixelpoint' ),
+                'description' => __( 'Comma separated values or single category ID', 'pixelpoint' ),
                 'section' => 'sec_blog',
                 'type' => 'text'
         ) );	
@@ -206,10 +206,10 @@ $wp_customize->add_section(
         $wp_customize->add_control( 
             'set_category_exclude', 
             array(
-                'label' => __( 'Post categories to exclude', 'wp-devs' ),
-                'description' => __( 'Comma separated values or single category ID', 'wp-devs' ),			
+                'label' => __( 'Post categories to exclude', 'pixelpoint' ),
+                'description' => __( 'Comma separated values or single category ID', 'pixelpoint' ),			
                 'section' => 'sec_blog',
                 'type' => 'text'
         ) );            
 }
-add_action( 'customize_register', 'wpdevs_customizer' );
+add_action( 'customize_register', 'pixelpoint_customizer' );
