@@ -4,6 +4,10 @@
    <!-- XX <div id="classification-container"> -->
     <!-- Classifications will be injected here by jQuery -->
 </div>
+<input type="date" id="start-date" placeholder="Start Date">
+<input type="date" id="end-date" placeholder="End Date">
+<button id="search-btn">Search</button>
+
 
 
     <section class="schedule-section spad">
