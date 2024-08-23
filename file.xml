@@ -1,0 +1,85 @@
+Here is the JSON content converted to XML:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:schema="https://schema.org/"
+         xmlns:skos="https://www.w3.org/2009/08/skos-reference/skos.html#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:dc="https://schema.datacycle.at/"
+         xmlns:dcls="https://data.carinthia.com/schema/"
+         xmlns:odta="https://odta.io/voc/"
+         xmlns:sdm="https://smartdatamodels.org/"
+         xmlns:alps="http://json-schema.org/draft-07/schema/destinationdata/schemas/2022-04/datatypes#/definitions/">
+  <rdf:Description rdf:about="4adecc56-e504-4066-b731-9c2e7eede07c">
+    <rdf:type rdf:resource="https://schema.org/Event"/>
+    <rdf:type rdf:resource="https://data.carinthia.com/schema/Event"/>
+    <dc:multilingual>true</dc:multilingual>
+    <dc:translation>de</dc:translation>
+    <dc:classification rdf:resource="69a58054-3098-4bc6-a420-a2cabc9debf6"/>
+    <dc:classification rdf:resource="e4332e5e-bfba-4fb5-8dfa-df32a4d49751"/>
+    <dc:classification rdf:resource="2c860aef-82ab-4fc2-8920-90efccd534a0"/>
+    <dc:classification rdf:resource="20b03b7f-41ff-4c6d-bf43-18cb45d5c2f4"/>
+    <schema:name>AiR Ewa Jaczynska</schema:name>
+    <schema:startDate>2024-07-01T12:00:00.000+02:00</schema:startDate>
+    <schema:endDate>2024-09-01T12:00:00.000+02:00</schema:endDate>
+    <schema:description><![CDATA[<p>Für ihren Aufenthalt in Gmünd plant Ewa Jaczynska eine vertiefende Auseinandersetzung mit der Technik des Holzschnittes und der Monotypie und insbesondere die Beschäftigung mit dem »Raum in der abstrakten Kunst«: „Welche Farbkombinationen vertiefen den Raum und wie möchte ich den Raum ausbauen? ...</p>]]></schema:description>
+    <schema:image rdf:resource="889f0deb-d363-47a5-8e75-e774406e05df"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="889f0deb-d363-47a5-8e75-e774406e05df">
+    <rdf:type rdf:resource="https://schema.org/CreativeWork"/>
+    <rdf:type rdf:resource="https://schema.org/MediaObject"/>
+    <rdf:type rdf:resource="https://schema.org/ImageObject"/>
+    <rdf:type rdf:resource="https://data.carinthia.com/schema/Bild"/>
+    <dc:multilingual>true</dc:multilingual>
+    <dc:translation>de</dc:translation>
+    <dc:classification rdf:resource="258d6381-887c-4099-b55a-795b842fd909"/>
+    <schema:name>Ewa Jaczynska, "Construction phase", Monotypie auf Papier, 297x21 cm, 2022</schema:name>
+    <schema:caption>Ewa Jaczynska, "Construction phase", Monotypie auf Papier, 297x21 cm, 2022</schema:caption>
+    <schema:description><![CDATA[<p>Abstrakte Monotypie mit türkisen groben Pinselstrichen im Vordergrund.</p>]]></schema:description>
+    <dc:originalUrl>https://data.carinthia.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaWt6TmpKbVl6VTVZaTFqWkRnMExUUm1ZV0V0T0RnMk9TMDNZV00wTW1VMk5ESTJPR1FHT2daRlZBPT0iLCJleHAiOm51bGwsInB1ciI6ImJsb2JfaWQifX0=--28463732b895cef006903bc60dc22bc88b167703/Construction-phase-Monotypie-auf-Papier-297x21-cm-2022-scaled_724x1024px-80.jpg</dc:originalUrl>
+    <schema:thumbnailUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/UTPdTgLMPDE3EyDUmdW8_WF6jJd4kqJ0XA26GugDjmg/1715683157/thumb/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022</schema:thumbnailUrl>
+    <schema:width rdf:resource="889f0deb-d363-47a5-8e75-0dda66c8feff"/>
+    <schema:height rdf:resource="889f0deb-d363-47a5-8e75-5341a249d002"/>
+    <schema:contentSize>189535.0</schema:contentSize>
+    <schema:fileFormat>image/jpeg</schema:fileFormat>
+    <schema:uploadDate>2024-04-26</schema:uploadDate>
+    <schema:copyrightHolder rdf:resource="4ca0484a-6938-4013-b099-318677948278"/>
+    <dc:mandatoryLicense>false</dc:mandatoryLicense>
+    <dc:contentUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/IhgStDpI-PcwH_NQrLEOOIhOr7-5qIEiY0jotZzL1og/1715683157/default/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.jpg</dc:contentUrl>
+    <dc:webUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/zxWyFhF7VaF44yHCZK2i_aRKF4X-ihJKZXeUmdhG72A/1715683157/web/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.png</dc:webUrl>
+    <dc:dynamicDefaultUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/y0cJAzhMWItGSdmcWykZBCIJ1nGJkUuNZXpJuBjKN-g/1715683157/default/fill/1920/1080/0/sm/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.jpeg</dc:dynamicDefaultUrl>
+    <dc:dynamicBlurryUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/EYyWLI_KZkgjvRYvlVfb_0TNkS_s_VL_MnCe4Hm-Lpk/1715683157/blurry/fill/1920/1080/0/sm/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.jpeg</dc:dynamicBlurryUrl>
+    <dc:dynamicPixelatedUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/6_xxdqibN4k_NZ1QzuLsh9oNOa8Bi0iBp5CFvP2EcKo/1715683157/pixelated/fill/1920/1080/0/sm/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.jpeg</dc:dynamicPixelatedUrl>
+    <dc:dynamicDefaultJpegUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/y0cJAzhMWItGSdmcWykZBCIJ1nGJkUuNZXpJuBjKN-g/1715683157/default/fill/1920/1080/0/sm/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.jpeg</dc:dynamicDefaultJpegUrl>
+    <dc:dynamicDefaultWebpUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/Qr9epyVs8935feMCKgsIXw8QQhDtt2uLtHRvol0q_w8/1715683157/default/fill/1920/1080/0/sm/ewa_jaczynska_construction_phase_monotypie_auf_papier_297x21_cm_2022.webp</dc:dynamicDefaultWebpUrl>
+    <dc:dynamicDefaultAvifUrl>https://data.carinthia.com/asset/889f0deb-d363-47a5-8e75-e774406e05df/8sKY540qwc8Ap2huVhB</dc:dynamicDefaultAvifUrl>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="69a58054-3098-4bc6-a420-a2cabc9debf6">
+    <rdf:type rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="e4332e5e-bfba-4fb5-8dfa-df32a4d49751">
+    <rdf:type rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="2c860aef-82ab-4fc2-8920-90efccd534a0">
+    <rdf:type rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="20b03b7f-41ff-4c6d-bf43-18cb45d5c2f4">
+    <rdf:type rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="258d6381-887c-4099-b55a-795b842fd909">
+    <rdf:type rdf:resource="https://www.w3.org/2009/08/skos-reference/skos.html#Concept"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="4ca0484a-6938-4013-b099-318677948278">
+    <rdf:type rdf:resource="https://schema.org/Person"/>
+    <rdf:type rdf:resource="https://data.carinthia.com/schema/Person"/>
+  </rdf:Description>
+
+</rdf:RDF>

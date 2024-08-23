@@ -1,12 +1,13 @@
 
-    <!-- Schedule Section Begin -->
     <?php /* display_api_data(); */ ?>
+
    <!-- XX <div id="classification-container"> -->
     <!-- Classifications will be injected here by jQuery -->
-</div>
-<input type="date" id="start-date" placeholder="Start Date">
-<input type="date" id="end-date" placeholder="End Date">
-<button id="search-btn">Search</button>
+<!-- <div id="search-container">
+    <input type="date" id="start-date" placeholder="Start Date">
+    <input type="date" id="end-date" placeholder="End Date">
+    <button id="search-btn">Search</button>
+</div> -->
 
 
 
@@ -58,11 +59,9 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                       
+                            <!-- displayData API -->
                         <div id="datacycle-container"> </div>
 
-                            <!-- <div id="load-more-container">
-                                <button id="load-more" class="primary-btn">Load More</button>
-                            </div> -->
                             
                             <div id="load-more-container" class="text-center mt-4">
                                 <div id="spinner-container" class="spinner-container mt-3">

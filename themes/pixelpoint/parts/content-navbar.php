@@ -21,6 +21,9 @@
                         <li><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
+                <a href="#" class="primary-btn top-btn">
+                    <i class="fa fa-search"></i>
+                </a>
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>

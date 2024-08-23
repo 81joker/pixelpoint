@@ -10,8 +10,6 @@ function pixelpoint_load_scripts()
     wp_enqueue_style('pixelpoint-google-fonts', 'https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900|Poppins:400,500,600,700&display=swap', array(), null);
     wp_enqueue_style('pixelpoint-googleapiss', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
-
-
     //  Css Styles
     wp_enqueue_style('pixelpoint-bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style('pixelpoint-font-awesome-style', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -23,8 +21,6 @@ function pixelpoint_load_scripts()
     // wp_enqueue_style( 'pixelpoint-style-sass',get_template_directory_uri() . '/assets/sass/style.sass' );
     wp_enqueue_style('pixelpoint-style-css', get_template_directory_uri() . '/assets/css/style.css');
     wp_enqueue_style('pixelpoint-style-css', get_template_directory_uri() . '/assets/css/api.css');
-
-
 
     // JavaScript Libraries
     // wp_enqueue_script('pixelpoint-ajax-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js', array('jquery'), '1.0', true);
@@ -94,7 +90,6 @@ function display_api_data()
             //    echo "<pre>"; 
             //    var_dump($event);
             //    echo "</pre>"; 
-            echo $event['dc:classification'];
 
             $startDate = isset($event['startDate']) ? new DateTime($event['startDate']) : null;
             $endDate = isset($event['endDate']) ? new DateTime($event['endDate']) : null;

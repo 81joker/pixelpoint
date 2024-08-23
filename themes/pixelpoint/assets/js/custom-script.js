@@ -20,7 +20,6 @@ async function loadData() {
     } catch (error) {
         console.error("Error loading data:", error);
     } finally {
-        // Hide the spinner
         document.getElementById("spinner-container").style.display = "none";
     }
 }
@@ -61,6 +60,9 @@ function displayData(items) {
         let location_id =
             location[0] && location[0]["@type"] ? location[0]["@type"][1] : null;
         location_id = location_id ? location_id.replace(/^dcls:/, "") : null;
+        const desc = (item.description && item.description.length > 250)
+        ? item.description.substring(0, 250) + '..'
+        : (item.description || 'No description available')
 
         itemElement.innerHTML = `
         <a href="#">
@@ -76,29 +78,31 @@ function displayData(items) {
             <div class="col-lg-5">
                 <div class="sc-text">
                     <h4>${item.name}</h4>
-                    <p>${item.description}</p>
+                    <p>
+                    ${desc}
+                    </p>
                 </div>
             </div>
-                        <div class="col-lg-2">
-                            <ul class="sc-widget">
-                                <li><i class="fa fa-map-marker"></i></li>
-                                <li class="font-weight-bold">
-                                 ${locationName ? location_id : locationName}
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-2">
-                            <ul class="sc-widget">
-                                <li><i class="fa fa-clock-o"></i></li>
-                                <li class="font-weight-bold px-0" style="font-size: 14px;">${formatStartDate}</li>
-                                <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedStartTime}</li>
-                                <li class="font-weight-bold px-0" style="font-size: 14px;">Bis</li>
-                                <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedEndDate}</li>
-                                <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedEndTime}</li>
-                             </ul>
-                        </div>            
+            <div class="col-lg-2">
+                <ul class="sc-widget">
+                    <li><i class="fa fa-map-marker"></i></li>
+                    <li class="font-weight-bold">
+                    ${location_id ? location_id : locationName}
+                    </li>
+                </ul>
             </div>
-            </a>
+            <div class="col-lg-2">
+                <ul class="sc-widget">
+                    <li><i class="fa fa-clock-o"></i></li>
+                    <li class="font-weight-bold px-0" style="font-size: 14px;">${formatStartDate}</li>
+                    <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedStartTime}</li>
+                    <li class="font-weight-bold px-0" style="font-size: 14px;">Bis</li>
+                    <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedEndDate}</li>
+                    <li class="font-weight-bold px-0" style="font-size: 14px;">${formattedEndTime}</li>
+                </ul>
+            </div>
+        </div>
+        </a>
         `;
         container.appendChild(itemElement);
     });
