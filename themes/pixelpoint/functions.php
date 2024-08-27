@@ -3,24 +3,19 @@
 
 require get_template_directory() . '/inc/customizer.php';
 
+
 function pixelpoint_load_scripts()
 {
+    wp_enqueue_script('main-pixelpoint-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
+
 
     //   Google Font 
     wp_enqueue_style('pixelpoint-google-fonts', 'https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900|Poppins:400,500,600,700&display=swap', array(), null);
     wp_enqueue_style('pixelpoint-googleapiss', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
     //  Css Styles
-    wp_enqueue_style('pixelpoint-bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
     wp_enqueue_style('pixelpoint-font-awesome-style', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-    wp_enqueue_style('pixelpoint-elegant-icons', get_template_directory_uri() . '/assets/css/elegant-icons.css');
-
-    wp_enqueue_style('pixelpoint-template-style', get_template_directory_uri() . '/assets/css/owl.carousel.min.css');
-    wp_enqueue_style('pixelpoint-template-style', get_template_directory_uri() . '/assets/css/magnific-popup.css');
-    wp_enqueue_style('pixelpoint-template-style', get_template_directory_uri() . '/assets/css/slicknav.min.css');
-    // wp_enqueue_style( 'pixelpoint-style-sass',get_template_directory_uri() . '/assets/sass/style.sass' );
-    wp_enqueue_style('pixelpoint-style-css', get_template_directory_uri() . '/assets/css/style.css');
-    wp_enqueue_style('pixelpoint-style-css', get_template_directory_uri() . '/assets/css/api.css');
+    wp_enqueue_style('pixelpoint-index-css', get_template_directory_uri() . '/assets/css/index.css');
 
     // JavaScript Libraries
     // wp_enqueue_script('pixelpoint-ajax-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js', array('jquery'), '1.0', true);
@@ -28,7 +23,6 @@ function pixelpoint_load_scripts()
     wp_enqueue_script('pixelpoint-bootstrap-js', get_theme_file_uri('/assets/js/bootstrap.min.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('pixelpoint-magnific-popup-js', get_theme_file_uri('/assets/js/jquery.magnific-popup.min.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('pixelpoint-countdown-min-js', get_theme_file_uri('/assets/js/jquery.countdown.min.js'), array('jquery'), '1.0', true);
-    wp_enqueue_script('pixelpoint-slicknav', get_theme_file_uri('/assets/js/jquery.slicknav.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('pixelpoint-slicknav', get_theme_file_uri('/assets/js/jquery.slicknav.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('pixelpoint-owlcarousel-js', get_theme_file_uri('/assets/js/owl.carousel.min.js'), array('jquery'), '1.0', true);
     wp_enqueue_script('pixelpoint-main-js', get_theme_file_uri('/assets/js/main.js'), array('jquery'), '1.0', true);

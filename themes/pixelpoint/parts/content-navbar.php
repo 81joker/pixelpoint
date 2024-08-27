@@ -17,7 +17,8 @@
                     <ul>
                         <li <?php echo ($_SERVER['REQUEST_URI'] == '/') ? 'class="active"' : ''; ?>><a  href="<?php echo site_url('/') ?>">Home</a></li>
                         <li <?php echo ($_SERVER['REQUEST_URI'] == '/events/') ? 'class="active"' : ''; ?> ><a  href="<?php echo site_url('/events') ?>"  >Events</a></li>
-                        <li><a href="#">About</a></li>
+                        <li <?php echo ($_SERVER['REQUEST_URI'] == '/about/') ? 'class="active"' : ''; ?> > <a href="<?php echo site_url('/about') ?>" >About</a></li>
+                        <li <?php echo ($_SERVER['REQUEST_URI'] == '/services/') ? 'class="active"' : ''; ?> > <a href="<?php echo site_url('/services') ?>" >Services</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
