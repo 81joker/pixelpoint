@@ -8,7 +8,6 @@ function pixelpoint_load_scripts()
 {
     wp_enqueue_script('main-pixelpoint-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
 
-
     //   Google Font 
     wp_enqueue_style('pixelpoint-google-fonts', 'https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900|Poppins:400,500,600,700&display=swap', array(), null);
     wp_enqueue_style('pixelpoint-googleapiss', 'https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
